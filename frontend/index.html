@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Potato Disease Predictor</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Potato Disease Predictor 🌿🥔</h1>
+    <p>Upload a potato leaf image to detect if it's healthy or affected by early/late blight.</p>
+  </header>
+
+  <main>
+    <div class="upload-box" id="uploadBox">
+      <label for="file-upload" class="custom-file-upload" id="uploadLabel">Click to select image</label>
+      <input id="file-upload" type="file" accept="image/*" />
+      <img id="preview" src="" alt="Image Preview" />
+      <button onclick="uploadImage()">Predict</button>
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
